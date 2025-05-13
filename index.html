@@ -25,22 +25,6 @@
   <meta name="author" content="MrTrivix">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="js/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      let numberOfImages=5;
-      let random = Math.round(Math.random()*(numberOfImages-1))+1;
-      let imgPath=('./img/background' + random + '.jpg');
-      let nav_bar = '#29265a';
-      if (random === 2) nav_bar = '#193e7c';
-      else if (random === 3) nav_bar = '#011C39';
-      else if (random === 4) nav_bar = '#793077';
-      else if (random === 5) nav_bar = '#B59C88';
-
-      $('body').css('background-image', ('url("' + imgPath + '")'));
-      $('#nav-box').css('background', (nav_bar));
-    });
-  </script>
 
 </head>
 
