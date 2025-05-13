@@ -37,7 +37,7 @@ a {
   position: absolute;
   left:50%;
   transform: translate(-50%);
-  width: 300px;
+  width: 150px;
   height: 58px;
   display: flex;
   align-items: center;
