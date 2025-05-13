@@ -38,7 +38,7 @@ a {
   left:50%;
   transform: translate(-50%);
   width: 150px;
-  height: 29px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -52,10 +52,6 @@ a {
 nav {
     background-color: transparent;
     -webkit-transition: background-color 0.5s ease-in-out;
-    -moz-transition: background-color 0.5s ease-in-out;
-    -ms-transition: background-color 0.5s ease-in-out;
-    -o-transition: background-color 0.5s ease-in-out;
-    transition: background-color 0.5s ease-in-out;
 }
 /* Transparent Nav Stuff END */
 
@@ -73,9 +69,6 @@ button[data-balloon] {
     opacity: 0;
     pointer-events: none;
     -webkit-transition: all 0.18s ease-out 0.18s;
-    -moz-transition: all 0.18s ease-out 0.18s;
-    -ms-transition: all 0.18s ease-out 0.18s;
-    -o-transition: all 0.18s ease-out 0.18s;
     transition: all 0.18s ease-out 0.18s;
     font-family: sans-serif !important;
     font-weight: normal !important;
