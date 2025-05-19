@@ -1,9 +1,42 @@
 <!DOCTYPE html>
+
+<!DOCTYPE HTML>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Materialize -->
+  <link rel="stylesheet" href="css/materialize.min.css">
+
+  <!-- Theme's Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Theme JS -->
+  <script src="js/particles.js"></script>
+
+  <script src="//megatimer.ru/get/2a85306d0e182756655959cd28621311.js"></script>
   <title>Я ВЕРНУСЬ</title>
+  
+  <!-- Icon -->
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+  <!-- Meta Info -->
+  <meta charset="UTF-8">
+  <meta name="author" content="MrTrivix">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="js/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      let numberOfImages=9;
+      let random = Math.round(Math.random()*(numberOfImages-1))+1;
+      let imgPath=('./img/background' + random + '.jpg');
+      let nav_bar = '#29265a';
+
+      $('body').css('background-image', ('url("' + imgPath + '")'));
+      $('#nav-box').css('background', (nav_bar));
+    });
+  </script>
+
 </head>
 <style>
     body {
@@ -11,7 +44,35 @@
 	color: #fff;
 }
 </style>
+
 <body>
-  <script src="//megatimer.ru/get/2a85306d0e182756655959cd28621311.js"></script>
+  <!-- Nav -->
+  <div id="nav-box">
+    <div class="navbar-fixed">
+      <nav class="z-depth-0">
+        <div class="nav-wrapper">
+          <ul>
+            <li><a href="index.html#"><span data-balloon="Имя в Discord - mrtrivix" data-balloon-pos="down" style="z-index: 2;"><i class="fab fa-discord"></i></span></a></li>
+	    <li><a href="https://steamcommunity.com/id/Kapidara"><span data-balloon="Я в Steam" data-balloon-pos="down" style="z-index: 2;"><i class="fab fa-steam"></i></span></a></li>
+	    <li><a href="https://www.hoyolab.com/accountCenter/postList?id=398220084"><span data-balloon="Я в HoyoLab" data-balloon-pos="down" style="z-index: 2;"><i class="fab fa-web-awesome"></i></span></a></li>																				   
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- / Nav -->
+
+  <!-- Nick -->
+  <div class="nick">
+      <script src="//megatimer.ru/get/2a85306d0e182756655959cd28621311.js"></script>
+  </div>
+  <!-- / Nick -->
+
+  <!-- Particles -->
+  <div id="particles-js"></div>
+
+  <script src="js/particles-app.js"></script>
+  <!-- / Particles -->
 </body>
+
 </html>
